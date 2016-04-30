@@ -65,7 +65,7 @@ padding-top: 10px;
 letter-spacing: .5px;
 }
 
-a {
+nav a {
 display: inline-block;
 padding-right: 40px;
 }
@@ -76,7 +76,7 @@ background: url("sources/pro1.jpg") no-repeat center center fixed;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 820px;
+  min-height: 520px;
 }
 
 h1{
@@ -92,23 +92,23 @@ padding: 20px 10px 10px 10px;
 line-height:40px;
 }
 
-.btn {
-height: 2px;
-width: 2px;
+.contact a {
+height: 40px;
+width: 40px;
 display: inline-block;
-padding-right: 20px;
+padding-top: 70px;
 }
 
 
 /* typography */
 body {
   color: #fff;
-  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font: 300 10px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.home {
+/*.home {
 font-weight: 700;
-}
+}*/
 
 h1 {
 color: grey;
@@ -122,13 +122,14 @@ color: white;
 font-size:1.8vw;
 }
 
-footer {
+.footer {
 color: grey;
-text-align: center;
+padding-left: 10px;
+font-size: 1.2vw;
 }
 
 nav {
-background-color: grey;
+background-color: rgba(0, 0, 0, 0.4);
 }
 
 a {
@@ -139,4 +140,9 @@ font-size: 21px;
 /* others */
 .maintext {
 background:rgba(0 , 0, 0, 0.4);
+}
+
+img {
+max-height: 30px;
+border-radius: 10px;
 }
