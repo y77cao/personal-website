@@ -48,6 +48,7 @@ table {
 }
 
 
+/* ======================== homepage ======================*/
 
 /* grid */
 *,
@@ -70,7 +71,7 @@ display: inline-block;
 padding-right: 40px;
 }
 
-body {
+.homepage {
 background: url("sources/pro1.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -79,16 +80,16 @@ background: url("sources/pro1.jpg") no-repeat center center fixed;
   min-height: 520px;
 }
 
-h1{
-padding: 50px 10px 10px 10px;
+.greeting{
+padding: 30px 10px 10px 10px;
 }
 
 .maintext {
 width: 55%;
-height:60%;
+height:100%;
 margin-left: 10px;
-margin-top: 10px;
-padding: 20px 10px 10px 10px;
+margin-top: 70px;
+padding: 10px 10px 10px 10px;
 line-height:40px;
 }
 
@@ -96,35 +97,32 @@ line-height:40px;
 height: 40px;
 width: 40px;
 display: inline-block;
-padding-top: 70px;
+margin-top: 10px;
 }
 
 
 /* typography */
-body {
+.homepage {
   color: #fff;
-  font: 300 10px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* font: 300 10px/16px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif; */
+  font-family: 'Poiret One', cursive;
 }
 
-/*.home {
-font-weight: 700;
-}*/
 
-h1 {
-color: grey;
+.greeting {
 font-size: 72px;
-font-size: 5.5vw;
-font-weight: 700;
+font-size: 6vw;
+text-transform: uppercase;
+line-height: 60px;
 }
 
 .maintext {
 color: white;
-font-size:1.8vw;
+font-size:2.5vw;
 }
 
 .footer {
-color: grey;
-padding-left: 10px;
+margin-top:100px;
 font-size: 1.2vw;
 }
 
@@ -146,3 +144,5 @@ img {
 max-height: 30px;
 border-radius: 10px;
 }
+
+/* ======================== whoiam ======================*/
