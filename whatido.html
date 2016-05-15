@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+ <head>
+  <title> What I do </title>
+  <meta charset = "utf8" >
+  <link rel = "stylesheet" href = "style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One' rel='stylesheet' type='text/css'> </head>
+  
+ <body class = "whatido"> 
+ <nav> 
+    <a href ="mainpage.html" class = "home">HOME</a> 
+    <a href = "whoiam.html">WHO I AM</a>
+    <a href = "whatido.html">WHAT I DO</a>
+ </nav>
+ 
+ <div class = "do-block coding">
+  <img src="sources/coffee.jpg" alt="coding" class = "do-img">
+   <h1 class = "dothis">Coding</h1>
+ </div>
+ 
+ <div class = "do-block drawing">
+<img src="sources/drawing.jpg" alt="drawing" class = "do-img">
+ <h1 class = "dothis">Drawing</h1>
+ </div>
+ 
+  <div class = "do-block photo"">
+  <img src="sources/flower.jpg" alt="photography" class = "do-img">
+ <h1 class = "dothis">Photography</h1>
+ </div>
+ 
+  <div class = "do-block design">
+  <img src="sources/graphic.jpg" alt="graphic design" class = "do-img">
+   <h1 class = "dothis">Graphic Design</h1>
+ </div>
+ 
+  <script src = "jquery-1.12.3.js"> 
+</script>
+
+  <script>
+  $(document).ready(function() {
+   $(".coding").hide().fadeIn(200);
+    $(".drawing").hide().fadeIn(400);
+      $(".photo").hide().fadeIn(600);
+         $(".design").hide().fadeIn(800);
+  });
+    </script> 
+ 
+ </body>
+</html>
