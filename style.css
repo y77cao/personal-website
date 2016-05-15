@@ -63,12 +63,12 @@ nav {
 padding-left: 10px;
 padding-bottom: 10px;
 padding-top: 10px;
-letter-spacing: .5px;
 }
 
 nav a {
 display: inline-block;
-padding-right: 40px;
+padding-right: 6%;
+text-decoration:none;
 }
 
 .homepage {
@@ -90,7 +90,7 @@ height:100%;
 margin-left: 10px;
 margin-top: 70px;
 padding: 10px 10px 10px 10px;
-line-height:40px;
+line-height:120%;
 }
 
 .contact a {
@@ -100,6 +100,47 @@ display: inline-block;
 margin-top: 10px;
 }
 
+.popup {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.6); 
+}
+
+.content {
+    background-color: #fff;
+    margin: 15% auto; 
+    padding: 30px;
+    border: 1px solid #888;
+    width: 50%;
+    height: 40%;
+    font-size: 2vw;
+    text-align: center;
+    color:rgba(0,0,0,0.4);
+}
+
+.close {
+    background-color: rgba(0,0,0,0.4); 
+    font-size: 2.3vw;
+    border: 1px solid #888;
+    color:#fff;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+color: LightSteelBlue;
+}
 
 /* typography */
 .homepage {
@@ -113,7 +154,7 @@ margin-top: 10px;
 font-size: 72px;
 font-size: 6vw;
 text-transform: uppercase;
-line-height: 60px;
+line-height: 110%;
 }
 
 .maintext {
@@ -128,6 +169,7 @@ font-size: 1.2vw;
 
 nav {
 background-color: rgba(0, 0, 0, 0.4);
+letter-spacing: .5px;
 }
 
 a {
@@ -140,9 +182,136 @@ font-size: 21px;
 background:rgba(0 , 0, 0, 0.4);
 }
 
-img {
+.btn {
 max-height: 30px;
 border-radius: 10px;
 }
 
 /* ======================== whoiam ======================*/
+
+/* grid */
+.whoiam {
+background: url("sources/shot.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 520px;
+}
+
+.aline {
+margin:2%;
+width: auto;
+height:20%;
+}
+
+.intro-img {
+max-height:40%;
+max-width: 40%;
+padding:1%;
+}
+
+.intro-block1{
+margin:2% 10% 2% 1%;
+width: 60%;
+height:30%;
+border-bottom: 10px;
+}
+
+.intro-block2{
+margin:2% 1% 2% 30%;
+width: 60%;
+height:30%;
+border-bottom: 10px;
+}
+.intro-para {
+width: 40%;
+height: 30%;
+padding: 20px;
+}
+
+.intro-para, .intro-img {
+display: inline-block;
+}
+
+
+/* typography */
+.whoiam {
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+}
+
+.aline {
+font-size: 3.5vw;
+text-align: center;
+}
+
+.intro-block1, .intro-block2  {
+line-height: 110%;
+font-size: 1.8vw;
+text-align: center;
+}
+
+
+/* others */
+.intro-block1, .intro-block2  {
+background:rgba(0 , 0, 0, 0.4);
+}
+
+
+/* ======================== whatido ======================*/
+/* grids */
+.whatido {
+background: url("sources/shot.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 520px;
+}
+
+.do-block {
+margin: 1% 1% 1% 1%;
+width: 45%;
+height: 30%;
+padding:1%;
+}
+
+.do-img {
+max-height: 20%;
+max-width: 20%;
+}
+
+.dothis, .do-img{
+display:inline-block;
+}
+
+.coding, .drawing {
+display:inline-block;
+}
+
+.photo, .design {
+display:inline-block;
+}
+
+.dothis{
+width: 70%;
+height: 5%;
+padding-bottom:3%;
+}
+
+/*typography*/
+.whatido {
+  color: #fff;
+  font-family: 'Poiret One', cursive;
+}
+
+.dothis {
+font-size: 5vw;
+}
+
+/* others */ 
+
+.do-block {
+background:rgba(0 , 0, 0, 0.4);
+}
