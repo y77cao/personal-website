@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+ <head>
+  <title> my website </title>
+  <meta charset = "utf8" >
+  <link rel = "stylesheet" href = "style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One' rel='stylesheet' type='text/css'>
+ </head>
+ 
+ <body class = "whoiam">
+ 
+ <nav> 
+    <a href ="home.html" class = "home">HOME</a> 
+    <a href = "whoiam.html">WHO I AM</a>
+    <a href = "whatido.html">WHAT I DO</a>
+ </nav>
+ 
+ <div class = "intro">
+ <p class = "aline"> Hi! My name is Yujia Cao and I am from Chongqing, China. </p>
+
+<div class = "intro-block1 first"> 
+<p class = "intro-para">
+My interest towards computer science began when I was an exchange student in 
+New Mexico, the United States in 2013. I took the advanced technology course at school,
+ which made me realize the charm of programming. And I decided to do the further study 
+ in this field in University of Waterloo. 
+ </p> 
+<img src="sources/exchange.jpg" alt="My host family and me in New Mexico" class = "intro-img">
+</div> 
+
+<div class = "intro-block2 second"> 
+ <img src="sources/ma.jpg" alt="In Malaysia" class = "intro-img">
+ <p  class = "intro-para">
+ Travelling is one indispensable part of my life. I have been to over ten countries all 
+ over the world: Australia, US, Japan, Thailand,etc. And I am still looking for more unique and unforgettable experience.
+ Travelling broadens my horizons. It is also a good way to jump out of my comfort zone and enjoy different lifestyle.
+ I consider my life as an adventure. Never stop discovering:)! </p>
+ </div>
+ 
+ <div class = "intro-block1 third"> 
+<p  class = "intro-para">
+I have been an artist almost my entire life. 
+I started to paint various type of arts when I was little. I also wrote music for piano, and 
+play marimba and Irish whistle. I have been a dancer for over 8 years as well. 
+I love website design, graphic design and fashion design. I have over 3 years experience in graphic design so far.
+Creativity is my mentor.</p>
+<img src="sources/design.jpg" alt="Drawing" class = "intro-img">
+</div> 
+
+ <script src = "jquery-1.12.3.js"> 
+</script>
+
+  <script>
+  $(document).ready(function() {
+   $(".aline").hide().fadeIn(400);
+   $(".first").hide().fadeIn(600);
+   $(".second").hide().fadeIn(800);
+   $(".third").hide().fadeIn(1000);
+  });
+    </script> 
+
+ </body>
+</html>
