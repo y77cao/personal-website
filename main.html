@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+ <head>
+  <title> my website </title>
+  <meta charset = "utf8" >
+  <link rel = "stylesheet" href = "style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Julius+Sans+One|Poiret+One' rel='stylesheet' type='text/css'>
+ </head>
+ 
+ <body class = "homepage">
+   <nav> 
+    <a href ="mainpage.html" >HOME</a> 
+    <a href = "whoiam.html"  >WHO I AM</a>
+    <a href = "whatido.html">WHAT I DO</a>
+   </nav>
+    
+  <div class= "maintext" id = "main">
+   <header>
+    <h1 class = "greeting"> Hi! <br> My name is <br> Yujia Cao. </h1>
+   </header>
+
+     <p> Right now I am in my 2A term studying Computer Science in University of Waterloo.</p>
+     <p>I am a programmer, a web designer and an artist.</p>
+  
+     <section class = "contact">
+      <a href = "mailto:y77cao@uwaterloo.ca" > <img src = "sources/email.jpg" alt = "email" class = "btn" > </a>
+      <a href = "https://www.facebook.com/cao.yujia.7"  > <img src = "sources/fb.jpg" alt = "facebook" class = "btn" > </a>
+      <a href = "https://github.com/y77cao"  > <img src = "sources/github.jpg" alt = "github" class = "btn" > </a>
+     </section>
+      
+  <footer class = "footer">
+   <p>2016 &copy;YUJIA CAO</p>
+  </footer>
+  </div>
+  
+  <div class = "popup" id = "pop">
+   <div class = "content">
+   <p>Thank you for visiting:)! This site is still under development.
+    If you have any good ideas or suggestions, please don't hesitate to contact me:)! <br><br></p>
+       <span class = "close"> Got it! </span> 
+  </div>
+  
+ </body>
+ 
+  <script src = "jquery-1.12.3.js"> 
+</script>
+
+  <script>
+  $(document).ready(function() {
+   $(".maintext").hide().fadeIn(600);
+  });
+    </script> 
+   
+    <script>
+var popup = document.getElementById("pop");
+var close = document.getElementsByClassName("close")[0];
+var mainpage = document.getElementById("main");
+
+
+mainpage.onclick = function() {
+    popup.style.display = "block";
+}
+close.onclick = function() {
+    popup.style.display = "none";
+}
+window.onclick = function(event) {
+    if (event.target == popup) {
+        popup.style.display = "none";
+    }
+}
+    </script>
+    
+    </html>
